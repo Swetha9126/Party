@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Background</title>
+    <style>
+        #a{
+            margin-top: 20%;
+            margin-left: 48%;
+            padding: 1%;
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: color-mix(in srgb, blueviolet 50%, black 50%);
+            transition: 0ms;
+        }
+    </style>
+</head>
+<body>
+    <button id="a" onclick="change()">Party</button>
+    <script>
+        var b=document.getElementById("a")
+        var ar=["black", "white", "red", "blue", "violet", "aqua", "navy", "pink", "grey", "orange", "yellow", "green", "wheat", "teal", "darkblue", "brown", "deeppink", "chocolate", "crimson", "blueviolet"]
+        function change(){
+            var r=(Math.floor(Math.random()*20))
+            document.body.style.backgroundColor=ar[r];
+        }
+    </script>
+</body>
+</html>
